@@ -1,10 +1,18 @@
 from langgraph.graph import StateGraph, START, END
 
+<<<<<<< HEAD
+from state import AgentState
+from nodes.router import router, route_by_intent
+from nodes.admission import admission_node
+from nodes.courses import courses_node
+from nodes.research import research_node
+=======
 from .state import AgentState
 from .nodes.router import router, route_by_intent
 from .nodes.admission import admission_node
 from .nodes.courses import courses_node
 from .nodes.research import research_node
+>>>>>>> 9bf220a9929d616fd4f5b3d6900c16769d766fdf
 
 
 def build_graph() -> StateGraph:
@@ -44,5 +52,9 @@ def build_graph() -> StateGraph:
     return builder.compile()
 
 
+<<<<<<< HEAD
+# Compiled graph instance — import this in app.py
+=======
 # Compiled graph instance — import this in main.py
+>>>>>>> 9bf220a9929d616fd4f5b3d6900c16769d766fdf
 graph = build_graph()
